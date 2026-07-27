@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Positions</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-color: black;
+      color: white;
+      position: relative;
+      /* top: 160px; */
+      /* margin-top: 160px; */
+    }
+
+    /* header {
+      height: 60px;
+      width: 100%;
+      background-color: yellow;
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 3;
+    } */
+
+    .container {
+      height: 500px;
+      width: 500px;
+      border: 2px solid white;
+      /* position: relative; */
+      bottom: -160px;
+      left: 100px;
+    }
+
+    .box {
+      height: 250px;
+      width: 250px;
+      background-color: plum;
+      border: 2px solid black;
+
+      position: sticky;
+      /* top: 80px; */
+      top: 120px;
+      left: 80px;
+      /* bottom: ; */
+      /* left: -40%; */
+      /* right: 80px; */
+    }
+
+    .small-box {
+      height: 80px;
+      width: 80px;
+      background-color: red;
+      border: 2px solid black;
+      position: absolute;
+      top: 80px;
+      left: 40px;
+    }
+
+    .sm-1 {
+      z-index: 2;
+    }
+
+    .sm-2 {
+      left: 80px;
+      top: 60px;
+      z-index: 1;
+    }
+
+    .sm-3 {
+      left: 120px;
+      top: 40px;
+    }
+
+
+    .para {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    section {
+      height: 100vh;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+
+      links
+    </nav>
+  </header>
+  <h1>Position properties</h1>
+
+
+  <p>positions:
+  <ul>
+    <li>Static(default)</li>
+    <li>Relative</li>
+    <li>Absolute</li>
+    <li>Fixed</li>
+    <li>Sticky</li>
+  </ul>
+  <ul>position change combinatiosn
+    <li>top-right</li>
+    <li>top-left</li>
+    <li>bottom-right</li>
+    <li>bottom-left</li>
+  </ul>
+  </p>
+
+  <div class="container">
+
+
+    <div class="box">
+
+      <div class="small-box sm-1"></div>
+      <div class="small-box sm-2"></div>
+      <div class="small-box sm-3"></div>
+
+    </div>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, dicta! Culpa dolore illum
+      tempora,
+      reprehenderit fugiat accusamus adipisci minus nesciunt aliquam consequuntur! Itaque perspiciatis ea dicta pariatur
+      et cupiditate blanditiis!</p>
+  </div>
+
+  <section></section>
+  <section></section>
+
+</body>
+
+</html>
