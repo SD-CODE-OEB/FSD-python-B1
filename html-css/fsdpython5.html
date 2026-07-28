@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Transitions and Psuedo Classes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      background-color: red;
+      color: yellow;
+      border-radius: 12px;
+      border: none;
+      box-shadow: 2px 2px 1px black;
+      transition: all ease-out 0.3s;
+    }
+
+    .btn:hover {
+      background-color: yellow;
+      color: red;
+      cursor: pointer;
+      padding: 54px;
+    }
+
+
+    .btn:active {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .btn:disabled {
+      color: white;
+      background-color: gray;
+      cursor: not-allowed;
+    }
+
+    input {
+      height: 30px;
+      margin: 30px;
+      box-shadow: 2px 2px 2px black;
+      border: 3px solid red;
+      border-radius: 8px;
+      outline: none;
+      transition: outline ease 0.3s;
+    }
+
+    input:focus {
+      outline: 10px solid yellow
+    }
+
+    input:disabled {
+      border: 2px solid black;
+      outline: none;
+      cursor: not-allowed;
+    }
+
+    input:required {
+      border: 4px solid orange;
+    }
+
+    .req-input:focus {
+      outline: 2px solid black;
+    }
+
+    .req-input:active {
+      outline: 5px solid pink
+    }
+
+    input:checked {
+      background-color: olivedrab;
+      height: 24px;
+      width: 48px;
+      border-radius: 24px;
+      color: yellow;
+      accent-color: orange;
+    }
+
+    p {
+      color: white;
+    }
+
+    /* 
+    p:hover {
+      color: red;
+      font-size: 24px
+    } */
+
+    .img-box {
+      height: 250px;
+      width: 250px;
+      background: url('https://www.travelexplorer.in/wp-content/themes/travelexplorer/images/intro-3.jpg');
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      color: white;
+      position: relative;
+      z-index: -2;
+    }
+
+    .bg-color {
+      background-color: rgba(0, 0, 0, 0.2);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+    }
+
+
+    .img-box .text {
+
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: height ease-in 0.3s;
+      height: 150px;
+    }
+
+    .text:hover {
+      height: 60%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Psudo Classes</h1>
+
+  <button class="btn">
+
+    Click me!!!
+  </button>
+
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae ab nesciunt autem consequatur in iure esse ipsa
+    fugit eius nulla aliquid ducimus quidem, neque quos reprehenderit enim magnam nemo fuga saepe atque nostrum.
+    Assumenda, corrupti ipsam.</p>
+
+  <button class="btn" disabled>
+
+    Don't Click me!!!
+  </button>
+
+  <input type="text" name="" id="">
+  <input type="text" name="" id="" required class="req-input">
+  <input type="text" name="" id="" disabled>
+
+  <input type="checkbox" name="" id="">
+
+  <div class="img-box">
+    <div class="bg-color"></div>
+    <div class="text">
+      <h4>Agra Mathura Special</h4>
+      <p>reliable efficient tour</p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
