@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-black text-[#2cf459] pb-16">
+
+  <nav class="h-28 bg-white sticky top-0 z-[3]"></nav>
+  <h1 class="text-8xl">Tailwind CSS </h1>
+
+  <p class="text-red-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita asperiores aliquid
+    voluptatem
+    corporis, nihil eos obcaecati quas at ipsum quisquam accusamus rem fugit in vel aut ex harum nobis distinctio.</p>
+
+  <div
+    class="h-[70vh] w-[80vw] border flex flex-col gap-4 ml-4 mt-20 justify-center items-center bg-amber-400 relative">
+    <h2 class="font-bold text- absolute top-4 left-1/2 -translate-x-1/2">This sis box here </h2>
+    <div class="bg-red-600 h-32 w-32 "></div>
+    <div class="bg-red-600 h-32 w-32"></div>
+  </div>
+
+  <div
+    class="h-[70vh] w-[80vw] border ml-4 mt-20 overflow-y-scroll grid gap-4 grid-cols-3 items-center justify-items-center bg-violet-600">
+
+    <div
+      class="bg-red-600 min-h-32 h-full min-w-32 w-full col-span-2 row-span-2 bg-gradient-to-tr from-yellow-600 to-green-600">
+    </div>
+    <div class="bg-red-600 h-32 row-span-2 w-32 "></div>
+    <div class="bg-red-600 h-32 w-32"></div>
+    <div class="bg-red-600 h-32 w-32"></div>
+    <div class="bg-red-600 h-32 w-32"></div>
+    <div class="bg-red-600 h-32 w-32"></div>
+  </div>
+  <button type="button"
+    class="px-12 py-4 bg-pink-600 border border-blue-600 border-4 rounded-lg shadow-[2px_2px_2px_#fff] shadow-white m-8 transition cursor-pointer hover:scale-105 hover:bg-blue-600 hover:text-pink-600 hover:border-pink-600 active:scale-90">Click
+    me
+  </button>
+
+</body>
+
+</html>

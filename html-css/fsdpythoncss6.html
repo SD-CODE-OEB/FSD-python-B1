@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+  <style>
+    .boxes {
+      height: 90vh;
+      width: 90vw;
+      display: grid;
+    }
+
+    .boxes div {
+      min-height: 150px;
+      min-width: 150px;
+      border: 2px solid black;
+    }
+
+    @media screen and (min-width: 988px) {
+
+      .sentences p {
+        font-size: 48px;
+      }
+
+      .boxes {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media screen and (min-width:650px) {
+      .boxes {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 468px) {
+      body {
+        overflow-x: hidden;
+      }
+
+      .boxes {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="sentences">
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci culpa, maxime dicta veritatis recusandae iure
+      quam. Alias corporis ea ducimus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perspiciatis aliquid a.</p>
+  </div>
+
+  <div class="boxes">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+</body>
+
+</html>
