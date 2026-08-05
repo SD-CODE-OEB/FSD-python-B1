@@ -29,9 +29,7 @@
     const buttonTag = document.querySelector('button')
     console.log(buttonTag)
 
-    buttonTag.addEventListener('hover', () => {
-      console.log("I am being clicked from eventListener")
-    })
+
 
 
     function clickMe() {
@@ -43,7 +41,9 @@
     buttonTag.addEventListener("keydown", () => {
       pTag.textContent = "keypressed"
     })
-
+    buttonTag.addEventListener('hover', () => {
+      console.log("I am being clicked from eventListener")
+    })
     // for (let i = 0; i <= pTag.length; i++) {
 
     //   pTag[i].textContent = 'this is p tag in HTML';

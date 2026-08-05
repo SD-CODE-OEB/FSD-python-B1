@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML JavaScript</title>
+  <style>
+    .box {
+      height: 150px;
+      width: 150px;
+      background-color: red;
+      color: yellow;
+    }
+
+    .box.active {
+      background-color: black;
+      color: white;
+      border: 5px solid blue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>DOM manipulation</h1>
+  <div class="box">
+    this is a box
+  </div>
+  <!--writing a tag here and calling it in javascript /> -->
+  <script>
+
+    const body = document.body;
+
+
+    body.addEventListener('keydown', (event) => {
+      console.log("pressed key")
+      const pTag = document.createElement('p');
+      body.appendChild(pTag)
+      pTag.textContent = `pressed key is ${event.key} - ${event.keyCode}`
+      console.log(event.key)
+      body.classList.add(".dark")
+    })
+
+    const BoxElement = document.querySelector('.box')
+
+    BoxElement.addEventListener('click', (e) => {
+      console.log(BoxElement.classList)
+      BoxElement.classList.toggle('active')
+    })
+
+    //create a tag in javascript and add ti from js only
+
+  </script>
+</body>
+
+</html>
