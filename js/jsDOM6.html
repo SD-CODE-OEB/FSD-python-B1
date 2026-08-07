@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="card" style="border: 2px solid black;">
+    <p>DIV 1</p>
+    <div class="img">
+      <p>DIV 2</p>
+      <img />
+      <button class="btn">
+        <p>DIV 3</p>
+        </i>
+    </div>
+  </div>
+  <script>
+
+    const card = document.querySelector(".card");
+    const img = document.querySelector(".img")
+    const btn = document.querySelector(".btn")
+
+    card.addEventListener('click', () => console.log('GO to product detail page'));
+    img.addEventListener('click', (event) => { event.stopPropagation(); console.log('Image expand') });
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation()
+      console.log('Add to cart')
+    });
+  </script>
+</body>
+
+</html>

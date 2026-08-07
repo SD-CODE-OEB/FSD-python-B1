@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form id="signup-form">
+    <p>
+      <label for="name">Name</label>
+      <input type="text" name="username" />
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="email" name="email" />
+    </p>
+    <p>
+      <label for="search">Search</label>
+      <input type="search" name="search-input" id="search" />
+    </p>
+    <input type="checkbox" name="newsletter" value="news" />
+    <!-- <button type="button">Register</button> -->
+    <input type="submit" value="Register" />
+  </form>
+
+  <script>
+    const signupForm = document.querySelector('#signup-form');
+    const searchInput = document.querySelector('#search');
+
+
+    signupForm.addEventListener('submit', (e) => {
+      e.preventDefault()
+      console.log(searchInput.value)
+      // console.log("form submitted")
+      // const formData = new FormData(signupForm);
+      // console.log(formData.entries())
+      // const formPayload = Object.fromEntries(formData.entries());
+      // console.log(formPayload)
+    });
+
+    // function submitForm(e) {
+    //   e.preventDefault()
+    //   console.log("form submitted")
+    // }
+
+
+    // Real-time keystroke tracking
+    searchInput.addEventListener('input', (e) => {
+      console.log('Current search query:', e.target.value);
+    });
+  </script>
+</body>
+
+</html>
